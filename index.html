@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Façanha Duarte | Brilhe com Estilo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(to bottom, #f2c7ae, #f252ba);
+      color: #333;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 { 
+      font-size: 10rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: #a62447;
+      font-family: 'Georgia', serif;
+    }
+
+    p {
+      font-size: 1.8rem;
+      color: #d92b8b;
+      font-weight: 600;
+    }
+
+    #produtos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .produto {
+      background: white;
+      border: 2px solid #d92b8b;
+      border-radius: 12px;
+      box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      transition: transform 0.3s ease;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .produto:hover {
+      transform: translateY(-8px);
+    }
+
+    .produto img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+      margin: 0 auto 1rem;
+    }
+
+    .produto h3 {
+      color: #d92b8b;
+      font-size: 2.2rem;
+      margin-top: 12px;
+      font-family: 'Georgia', serif;
+    }
+
+    .produto p {
+      color: #555;
+      font-size: 1.4rem;
+      margin: 10px 0;
+      font-style: italic;
+      flex-grow: 1;
+    }
+
+    .produto button {
+      background-color: #d92b8b;
+      color: white;
+      border: none;
+      padding: 14px 22px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .produto button:hover {
+      background-color: #a62447;
+    }
+
+    .social-buttons {
+      margin-top: 40px;
+    }
+
+    .social-buttons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 10px;
+      text-decoration: none;
+      background-color: #d92b8b;
+      color: white;
+      padding: 14px 22px;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      border: 2px solid #a62447;
+    }
+
+    .social-buttons a i {
+      margin-right: 8px;
+    }
+
+    .social-buttons a:hover {
+      background-color: #f252ba;
+      color: #f2c7ae;
+    }
+
+    footer {
+      background-color: #d92b8b;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Façanha Duarte</h1>
+    <p>Explore nossas roupas femininas com estilo e elegância!</p>
+  </header>
+
+  <section id="produtos">
+    <div class="produto">
+      <img src="/mnt/data/Calça%20Jeans.png" alt="Calça Jeans">
+      <h3>Calça Jeans Feminina</h3>
+      <p>Confortável e cheia de estilo, ideal para ocasiões formais e casuais.</p>
+      <button>Comprar Agora</button>
+    </div>
+
+    <div class="produto">
+      <img src="/mnt/data/Calça%20Jeans.png" alt="Camisa Branca">
+      <h3>Camisa Branca Feminina</h3>
+      <p>Uma peça clássica que combina com tudo e nunca sai de moda.</p>
+      <button>Comprar Agora</button>
+    </div>
+
+    <div class="produto">
+      <img src="/mnt/data/Calça%20Jeans.png" alt="Camisa Preta">
+      <h3>Camisa Preta Feminina</h3>
+      <p>Elegância e sofisticação em cada detalhe para ocasiões especiais.</p>
+      <button>Comprar Agora</button>
+    </div>
+  </section>
+
+  <div class="social-buttons">
+    <a href="https://www.instagram.com" target="_blank">
+      <i class="fab fa-instagram"></i>Instagram
+    </a>
+    <a href="https://api.whatsapp.com/send?phone=seunumerodetelefone" target="_blank">
+      <i class="fab fa-whatsapp"></i>WhatsApp
+    </a>
+  </div>
+
+  <footer>
+    Desenvolvido por Ivan Nascimento
+  </footer>
+</body>
+</html>
